@@ -21,7 +21,7 @@ function valueForIndex(arr, index) {
 }
 
 function getContent(obj) {
-  return get(obj, 'content');
+  return get(obj || {}, 'content');
 }
 
 function getArg(args, name) {
