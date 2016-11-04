@@ -24,7 +24,7 @@ function valueForIndex(arr, index) {
 function getContent(obj, isProxied) {
   const key = isProxied ? 'content.content' : 'content';
 
-  return get(obj, key);
+  return get(obj || {}, key);
 }
 
 const VerticalCollection = Component.extend({
